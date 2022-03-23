@@ -15,6 +15,6 @@ export class DataService {
       return this.http.post(environment.apiUrl + '/api/register/',data); 
   }
   login(data){
-    return this.http.post(environment.apiUrl + '/api/login/',data);
+    return this.http.post(environment.apiUrl + '/api/login',data);
   }
 }
