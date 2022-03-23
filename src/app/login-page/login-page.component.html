@@ -3,26 +3,120 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 ---- Include the above in your HEAD tag -------- -->
 
-<div class="wrapper fadeInDown">
-  <div id="formContent">
-    <!-- Tabs Titles -->
 
-    <!-- Icon -->
-    <div class="fadeIn first">
+
+
+
+
+<!-- this working -->
+<!-- <div class="wrapper fadeInDown">
+  <div id="formContent"> -->
+<!-- Tabs Titles -->
+
+<!-- Icon -->
+<!-- <div class="fadeIn first">
       <img src="https://www.payworldindia.com/wp-content/uploads/2019/10/logo-blue.png" id="icon" alt="User Icon" style="padding: 40px;" />
-    </div>
+    </div> -->
 
-    <!-- Login Form -->
-    <form>
+<!-- Login Form -->
+<!-- <form>
       <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
       <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
       <input routerLink="/dashboard" type="submit"  class="fadeIn fourth" value="Log In">
-    </form>
-    <!-- <button routerLink="/dashboard">abcasca</button> -->
+    </form> -->
+<!-- <button routerLink="/dashboard">abcasca</button> -->
 
-    <!-- Remind Passowrd -->
+<!-- Remind Passowrd -->
+<!-- <div id="formFooter">
+      <a class="underlineHover" routerLink="/forgotpassword">Forgot Password?</a>
+    </div>
+
+  </div>
+</div> -->
+<!-- this working -->
+
+
+<!-- Second form start -->
+<!-- <div class="container mt-4">
+  <header class="bg-dark text-white p-2 mb-2 text-center">
+    <h1>Login</h1>
+  </header>
+  <form (ngSubmit)="submit()" [formGroup]="form">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" formControlName="email" name="email" class="form-control" placeholder="Enter Email"
+        [ngClass]="{'is-invalid': submitted && f.email.errors}">
+
+      <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+        <div *ngIf="f.email.errors.required">
+          Email is Required
+        </div>
+        <div *ngIf="f.email.errors.email">
+          Email must be valid email Address
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" formControlName="password" name="password" class="form-control"
+        placeholder="Enter Password" [ngClass]="{'is-invalid': submitted && f.password.errors}">
+
+      <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+        <div *ngIf="f.password.errors.required">
+          Password is Required
+        </div>
+        <div *ngIf="f.password.errors.minlength">
+          Password must be atleast 6 digits
+        </div>
+      </div>
+
+    </div>
+    <button class="btn btn-dark btn-sm mt-4">Login</button>
+  </form>
+</div> -->
+
+<!-- second form end -->
+
+
+
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+
+    <div class="fadeIn first">
+      <img src="https://www.payworldindia.com/wp-content/uploads/2019/10/logo-blue.png" id="icon" alt="User Icon"
+        style="padding: 40px;" />
+    </div>
+
+
+    <form (ngSubmit)="submit()" [formGroup]="form">
+      <input type="text" formControlName="email" name="email" id="login" class="fadeIn second"  placeholder="login" [ngClass]="{'is-invalid': submitted && f.email.errors}">
+      <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+        <div *ngIf="f.email.errors.required">
+          Email is Required
+        </div>
+        <div *ngIf="f.email.errors.email">
+          Email must be valid email Address
+        </div>
+      </div>
+      <input type="password" formControlName="password" name="password" class="fadeIn third" placeholder="password" [ngClass]="{'is-invalid': submitted && f.password.errors}">
+
+      <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+        <div *ngIf="f.password.errors.required">
+          Password is Required
+        </div>
+        <div *ngIf="f.password.errors.minlength">
+          Password must be atleast 6 digits
+        </div>
+      </div>
+
+      <input  type="submit"  class="fadeIn fourth" value="Log In">
+    </form>
+    
+
+
     <div id="formFooter">
-      <a class="underlineHover" href="#">Forgot Password?</a>
+      <a class="underlineHover" routerLink="/forgotpassword">Forgot Password?</a>
     </div>
 
   </div>
