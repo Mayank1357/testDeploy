@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,  
-  // apiUrl: 'https://laravel991.herokuapp.com'
-  apiUrl: 'http://127.0.0.1:8000'
+  apiUrl: 'https://laravel991.herokuapp.com'
+  // apiUrl: 'http://127.0.0.1:8000'
 };
 // reChange it to original for local
 // apiUrl: 'http://127.0.0.1:8000'
