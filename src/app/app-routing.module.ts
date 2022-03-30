@@ -7,6 +7,11 @@ import { LogoutComponent } from './logout/logout.component';
 import { RegisterComponent } from './register/register.component';
 import { UsercrudComponent } from './usercrud/usercrud.component';
 import { AuthGaurd } from './auth.gaurd';
+import { RolemanagementComponent } from './rolemanagement/rolemanagement.component';
+
+import { RetdetComponent } from './retdet/retdet.component';
+
+
 const routes: Routes = [
   { path: 'dashboard' , component:DashboardComponent,canActivate:[AuthGaurd]},
   { path: '',component:LoginPageComponent},
@@ -14,6 +19,13 @@ const routes: Routes = [
   { path: 'forgotpassword',component:ForgotpasswordComponent},
   { path: 'logout',component:LogoutComponent},
   { path: 'register',component:RegisterComponent},
+  { path: 'rolemanagement',component:RolemanagementComponent},
+  
+  { path: 'retdet',component:RetdetComponent},
+  
+  
+  
+
   
 ];
 

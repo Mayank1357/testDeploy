@@ -8,13 +8,17 @@ import { environment } from 'src/environments/environment';
 })
 export class DataService {
 
-  constructor(private http:HttpClient) {
-    
-   }
-   registerUser(data){
-      return this.http.post(environment.apiUrl + '/api/register/',data); 
+  constructor(private http: HttpClient) {
+
   }
-  login(data){
-    return this.http.post(environment.apiUrl + '/api/login',data);
+  registerUser(data) {
+    return this.http.post(environment.apiUrl + '/api/register/', data);
+  }
+  login(data) {
+    return this.http.post(environment.apiUrl + '/api/login', data);
+  }
+
+  getData(){
+    return this.http.get(environment.apiUrl + '/api/allretailerDetails');
   }
 }
