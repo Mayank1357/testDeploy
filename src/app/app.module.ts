@@ -26,6 +26,7 @@ import { RetdetComponent } from './retdet/retdet.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { UsercreateComponent } from './Actions/usercreate/usercreate.component';
 import { DialogExampleComponent } from './Actions/dialog-example/dialog-example.component';
+import { UserdeleteComponent } from './Actions/userdelete/userdelete.component';
 
 
 
@@ -45,6 +46,7 @@ import { DialogExampleComponent } from './Actions/dialog-example/dialog-example.
     RetdetComponent,
      UsercreateComponent,
      DialogExampleComponent,
+     UserdeleteComponent,
      
     
 
