@@ -10,18 +10,25 @@ import { AuthGaurd } from './auth.gaurd';
 import { RolemanagementComponent } from './rolemanagement/rolemanagement.component';
 
 import { RetdetComponent } from './retdet/retdet.component';
+import { MainreportpageComponent } from './allreportsdata/mainreportpage/mainreportpage.component';
+import { UsersdataComponent } from './usersdata/usersdata.component';
+import { RetpageComponent } from './retpage/retpage.component';
+import { UserspageComponent } from './userspage/userspage.component';
 
 
 const routes: Routes = [
   { path: 'dashboard' , component:DashboardComponent,canActivate:[AuthGaurd]},
   { path: '',component:LoginPageComponent},
-  { path: 'usercrud',component:UsercrudComponent},
-  { path: 'forgotpassword',component:ForgotpasswordComponent},
+  { path: 'userdata',component:UsersdataComponent},
   { path: 'logout',component:LogoutComponent},
-  { path: 'register',component:RegisterComponent},
-  { path: 'rolemanagement',component:RolemanagementComponent},
-  
+  { path: 'register',component:RegisterComponent},  
   { path: 'retdet',component:RetdetComponent},
+
+
+  { path: 'reports',component:MainreportpageComponent,canActivate:[AuthGaurd]},
+  { path: 'usercrud',component:UsercrudComponent,canActivate:[AuthGaurd]},  
+  { path: 'retpage',component:RetpageComponent,canActivate:[AuthGaurd]},
+  { path: 'userpage',component:UserspageComponent,canActivate:[AuthGaurd]},
   
   
   

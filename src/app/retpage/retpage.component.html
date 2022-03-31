@@ -19,7 +19,7 @@
           <ul class="nav flex-column">
             
             <li class="nav-item">
-              <a class="nav-link active" routerLink="/usercrud" >
+              <a class="nav-link " routerLink="/usercrud" >
                 <span data-feather="file" ></span>
                 User CRUD
               </a>
@@ -38,7 +38,7 @@
               </a>
             </li>
             <li class="nav-item"  >
-              <a class="nav-link" routerLink="/retpage">
+              <a class="nav-link active" routerLink="/retpage">
                 <span data-feather="bar-chart-2"></span>
                 Retailers Data
               </a>
@@ -52,18 +52,16 @@
   
       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2" style="text-align: center;">Perform CRUD operations for Users</h1>
-          
+          <h1 class="h2">Retailers Details</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            
+          </div>
         </div>
   
         <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
         
         <!-- <fa-icon  class="fa-6x" [icon]="faUserPlus"></fa-icon>  -->
-        <div style="display: flex;justify-content: space-around;margin-top: 100px;">
-        <app-usercreate></app-usercreate>
-        <app-userdelete></app-userdelete>
-        <app-userupdate></app-userupdate>
-        </div>
+        <app-retdet></app-retdet>
       </main>
     </div>
   </div>

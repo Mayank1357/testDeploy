@@ -14,11 +14,17 @@ export class DataService {
   registerUser(data) {
     return this.http.post(environment.apiUrl + '/api/register/', data);
   }
+  updateUser(data,id) {
+    return this.http.put(environment.apiUrl + '/api/updateUser/' + id, data);
+  }
   login(data) {
     return this.http.post(environment.apiUrl + '/api/login', data);
   }
 
   getData(){
     return this.http.get(environment.apiUrl + '/api/allretailerDetails');
+  }
+  deleteUser(id){
+    return this.http.delete(environment.apiUrl + '/api/deleteUser/' + id);
   }
 }

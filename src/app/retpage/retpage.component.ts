@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import jwt_decode from 'jwt-decode';
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  selector: 'app-retpage',
+  templateUrl: './retpage.component.html',
+  styleUrls: ['./retpage.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class RetpageComponent implements OnInit {
+
   token:any;
   userData:any;
   email:any;
@@ -24,5 +25,5 @@ export class DashboardComponent implements OnInit {
     localStorage.removeItem('token');
     this.router.navigate(['/']);
   }
-  
+
 }

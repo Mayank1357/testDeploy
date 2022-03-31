@@ -42,7 +42,7 @@ export class LoginPageComponent implements OnInit {
       if(this.data.status === 1){
          this.token = this.data.data.token;
          localStorage.setItem('token',this.token);
-         this.router.navigate(['/dashboard']);
+         this.router.navigate(['/usercrud']);
          this.toastr.success(JSON.stringify(this.data.message),JSON.stringify(this.data.code),{
            timeOut:2000,
            progressBar:true

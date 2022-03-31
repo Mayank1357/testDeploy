@@ -27,6 +27,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { UsercreateComponent } from './Actions/usercreate/usercreate.component';
 import { DialogExampleComponent } from './Actions/dialog-example/dialog-example.component';
 import { UserdeleteComponent } from './Actions/userdelete/userdelete.component';
+import { UserminusinsideComponent } from './Actions/userminusinside/userminusinside.component';
+import { UsersdataComponent } from './usersdata/usersdata.component';
+import { UserupdateComponent } from './Actions/userupdate/userupdate.component';
+import { UserupdateinsideComponent } from './Actions/userupdateinside/userupdateinside.component';
+import { MainreportpageComponent } from './allreportsdata/mainreportpage/mainreportpage.component';
+import { MroComponent } from './allreportsdata/mro/mro.component';
+import { CmoComponent } from './allreportsdata/cmo/cmo.component';
+import { TcoComponent } from './allreportsdata/tco/tco.component';
+import { RetpageComponent } from './retpage/retpage.component';
+import { UserspageComponent } from './userspage/userspage.component';
 
 
 
@@ -47,6 +57,16 @@ import { UserdeleteComponent } from './Actions/userdelete/userdelete.component';
      UsercreateComponent,
      DialogExampleComponent,
      UserdeleteComponent,
+     UserminusinsideComponent,
+     UsersdataComponent,
+     UserupdateComponent,
+     UserupdateinsideComponent,
+     MainreportpageComponent,
+     MroComponent,
+     CmoComponent,
+     TcoComponent,
+     RetpageComponent,
+     UserspageComponent,
      
     
 
