@@ -15,6 +15,8 @@ export interface UserData {
   refpoints: number;
   created_at: any;
   updated_at: any;
+  bank_details:any;
+  kyc:any;
 }
 // const users : UserData[] = [
 //   {
@@ -1525,7 +1527,7 @@ export interface UserData {
 })
 export class RetdetComponent implements AfterViewInit {
   users:UserData[];
-  displayedColumns: string[] = ['party_code', 'first_name', 'last_name', 'email', 'dob','contact',  'refpoints'];
+  displayedColumns: string[] = ['party_code', 'first_name', 'last_name', 'email','bank_details', 'kyc','contact',  'refpoints'];
   dataSource: MatTableDataSource<UserData>;
 
   @ViewChild(MatPaginator) paginator: MatPaginator;

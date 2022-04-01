@@ -23,6 +23,10 @@
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Email</th>
       <td mat-cell *matCellDef="let row"> {{row.email}} </td>
     </ng-container>
+    <ng-container matColumnDef="bank_details">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Bank Details</th>
+      <td mat-cell *matCellDef="let row"> {{row.bank_details}} </td>
+    </ng-container>
     <ng-container matColumnDef="contact">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Contact</th>
       <td mat-cell *matCellDef="let row"> {{row.contact}} </td>
@@ -32,9 +36,9 @@
       <td mat-cell *matCellDef="let row"> {{row.refpoints}} </td>
     </ng-container>
     
-    <ng-container matColumnDef="dob">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>D.O.B</th>
-      <td mat-cell *matCellDef="let row"> {{row.dob}} </td>
+    <ng-container matColumnDef="kyc">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>KYC</th>
+      <td mat-cell *matCellDef="let row"> {{row.kyc ? 'Done':'Not DOne'}} </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
