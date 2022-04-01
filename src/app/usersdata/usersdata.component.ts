@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export interface UserData {
   id: string;
   name: string;
+  email:any;
   
 }
 @Component({
@@ -17,7 +18,7 @@ export interface UserData {
 })
 export class UsersdataComponent implements OnInit {
   users:UserData[];
-  displayedColumns: string[] = ['id', 'name'];
+  displayedColumns: string[] = ['id', 'name','email','user_type'];
   dataSource: MatTableDataSource<UserData>;
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
